@@ -1,0 +1,15 @@
+eel
+soundcard
+torch
+numpy
+transformers
+librosa
+ollama
+pywin32
+pythoncom
+logging
+queue
+threading
+json
+os
+warnings

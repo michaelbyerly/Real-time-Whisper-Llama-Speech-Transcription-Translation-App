@@ -1,0 +1,76 @@
+<!-- web/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootswatch Darkly Theme for Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
+    <!-- Selectize CSS for searchable dropdowns -->
+    <link href="https://cdn.jsdelivr.net/npm/selectize@0.12.6/dist/css/selectize.bootstrap5.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container my-4">
+        <div class="card mt-4">
+            <div class="card-body">
+                <!-- Device Selection -->
+                <div class="mb-3">
+                    <label for="deviceSelector" class="form-label">Select Processing Device:</label>
+                    <select class="form-select" id="deviceSelector">
+                        <option selected disabled>Loading devices...</option>
+                    </select>
+                </div>
+                <!-- Audio Source Selection -->
+                <div class="mb-3">
+                    <label for="audioSource" class="form-label">Select Audio Source:</label>
+                    <select class="form-select" id="audioSource">
+                        <option selected disabled>Loading audio sources...</option>
+                    </select>
+                </div>
+                <!-- Start/Stop Buttons -->
+                <div class="d-flex justify-content-center mb-4 flex-wrap">
+                    <button id="startBtn" class="btn btn-success me-2 mb-2">Start</button>
+                    <button id="stopBtn" class="btn btn-danger mb-2" disabled>Stop</button>
+                </div>
+                <!-- Transcription Displays with Language Selectors -->
+                <div class="row">
+                    <!-- Raw Transcription and Source Language Selector -->
+                    <div class="col-md-6 mb-3">
+                        <h5>Raw Transcription:</h5>
+                        <textarea id="rawText" class="form-control" rows="10" readonly></textarea>
+                        <div class="mt-2">
+                            <select id="sourceLanguage" placeholder="Select source language...">
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Translated Text and Target Language Selector -->
+                    <div class="col-md-6 mb-3">
+                        <h5>Translated Text:</h5>
+                        <textarea id="translatedText" class="form-control" rows="10" readonly></textarea>
+                        <div class="mt-2">
+                            <select id="targetLanguage" placeholder="Select target language...">
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Status Bar -->
+                <div id="statusBar" class="alert alert-info mt-3 d-none" role="alert">
+                    <!-- Status messages will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (required for Selectize) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Selectize JS for searchable dropdowns -->
+    <script src="https://cdn.jsdelivr.net/npm/selectize@0.12.6/dist/js/standalone/selectize.min.js"></script>
+    <!-- Eel JS -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

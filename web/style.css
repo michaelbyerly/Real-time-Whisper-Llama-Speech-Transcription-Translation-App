@@ -1,0 +1,186 @@
+/* web/style.css */
+
+/* Global Styles */
+body {
+    background-color: #121212 !important; /* Dark background */
+    color: #ffffff !important; /* White text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+h1, h5 {
+    color: #ffffff !important;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background-color: #1e1e1e !important; /* Dark card background */
+    border: 1px solid #333333 !important; /* Dark border */
+}
+
+.card-body {
+    background-color: #1e1e1e !important; /* Match card background */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Form Labels */
+.form-label {
+    color: #ffffff !important;
+}
+
+/* Select Dropdown */
+.form-select {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+}
+
+.form-select:focus {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    border-color: #555555 !important;
+    box-shadow: none !important;
+}
+
+/* Textareas */
+textarea {
+    resize: none;
+    border: 1px solid #333333 !important;
+    height: auto;
+    min-height: 200px;
+    max-height: 400px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #1e1e1e !important; /* Dark background */
+    color: #ffffff !important; /* White text */
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #28a745 !important;
+    border: none !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    border: none !important;
+}
+
+.btn-success:hover {
+    background-color: #218838 !important;
+}
+
+.btn-danger:hover {
+    background-color: #c82333 !important;
+}
+
+/* Status Bar */
+#statusBar {
+    background-color: #343a40 !important; /* Darker background */
+    color: #ffffff !important; /* White text */
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    opacity: 0.95;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+}
+
+/* Additional Elements */
+.container {
+    background-color: #121212 !important;
+}
+
+.btn {
+    color: #ffffff !important;
+}
+
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+/* Responsive Textareas */
+@media (max-width: 1200px) {
+    textarea {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 992px) {
+    textarea {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    textarea {
+        max-height: 250px;
+    }
+}
+
+/* Responsive Buttons */
+@media (max-width: 576px) {
+    .d-flex.justify-content-center.mb-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Selectize Overrides */
+.selectize-control {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #333333;
+    width: 100%; /* Ensure full width */
+}
+
+.selectize-input, .selectize-dropdown {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    width: 100%; /* Ensure full width */
+}
+
+.selectize-input input {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+.selectize-dropdown-content .option {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.selectize-dropdown-content .option:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
