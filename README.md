@@ -2,6 +2,8 @@
 
 This project is a **real-time speech transcription and translation application** that leverages **OpenAI's Whisper model** for speech recognition and **Meta's Llama model** for language translation. The application uses **Eel** to provide a web-based user interface, making it accessible and user-friendly.
 
+![Example](example.png)
+
 ## 🔹 How It Works
 
 1. **Captures Live Audio**  
