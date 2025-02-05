@@ -76,11 +76,3 @@ python main.py
 ```bash
 python gpu_test.py
 ```
-
----
-
-## 🔮 Future Enhancements
-- Support for additional speech models.
-- Improved UI and real-time feedback.
-- Enhanced accuracy in noisy environments.
-- Fine-tuning options for Whisper and Llama models.
